@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# makes qgpass available at bin/qgpass
+curl https://s3.amazonaws.com/quotaguard/qgpass-latest.tar.gz | tar xz
