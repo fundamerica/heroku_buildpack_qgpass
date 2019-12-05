@@ -2,3 +2,10 @@
 
 # makes qgpass available at bin/qgpass
 curl https://s3.amazonaws.com/quotaguard/qgpass-latest.tar.gz | tar xz
+
+if [ -f "bin/qgpass" ]; then
+    ls -la bin/qgpass
+else 
+    echo "bin/qgpass does not exist!"
+    exit 1
+fi
