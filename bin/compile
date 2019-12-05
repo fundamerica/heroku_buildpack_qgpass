@@ -2,10 +2,6 @@
 # bin/compile <build-dir> <cache-dir> <env-dir>
 BUILD_DIR="$1"
 
-# Configure environment
-set -e            # fail fast
-set -o pipefail   # don't ignore exit codes when piping output
-
 cd "$BUILD_DIR"
 
 # makes qgpass available at bin/qgpass
